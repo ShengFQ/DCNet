@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    tools:context="com.bandary.dcnet.ui.KTListActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_ktlist_top"
+        android:layout_width="fill_parent"
+        android:layout_height="42sp"
+        android:background="@drawable/title_bar_bg" >
+
+        <ImageButton
+            android:id="@+id/btn_KTlist_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_selector_back"
+            />
+
+        <TextView
+            android:id="@+id/lab_KTlist_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="空调列表"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btn_KTlist_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lab_KTlist_fname"
+            android:background="@drawable/btn_selector_refresh" />
+
+        <ImageButton
+            android:id="@+id/btn_KTlist_addKT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/btn_KTlist_refresh"
+            android:background="@null"
+            android:src="@drawable/btn_selector_add" />
+    </RelativeLayout>
+    <!-- 上部结尾 -->
+
+    <LinearLayout
+        android:id="@+id/linear_ktlist_thead"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/relative_layout_ktlist_top"
+        android:background="@drawable/list_location_bg"       
+        android:orientation="horizontal" >
+
+		 <RelativeLayout
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_margin="5dp" >
+        <TextView 
+            android:id="@+id/kt_listview_text_fCommstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="14sp"
+            android:textColor="#6699FF"
+            android:layout_marginLeft="5dp"
+            android:text="通讯"
+            />
+         <TextView 
+            android:id="@+id/kt_listview_text_froomtemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kt_listview_text_fCommstate"
+            android:layout_toRightOf="@+id/kt_listview_text_fCommstate"            
+            android:layout_marginLeft="35dp"
+            android:textSize="14sp"
+            android:textColor="#6699FF"
+            android:text="室温"
+            />
+        <TextView 
+            android:id="@+id/kt_listview_text_fModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kt_listview_text_fCommstate"
+            android:layout_toRightOf="@+id/kt_listview_text_froomtemp"
+            android:layout_marginLeft="35dp"
+            android:textSize="14sp"
+            android:textColor="#6699FF"
+            android:text="模式"
+            />
+        <TextView 
+            android:id="@+id/kt_listview_text_fspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kt_listview_text_fCommstate"
+            android:layout_toRightOf="@+id/kt_listview_text_fModel"
+            android:layout_marginLeft="35dp"
+            android:textSize="14sp"
+            android:textColor="#6699FF"
+            android:text="风速"
+            />
+          <TextView 
+            android:id="@+id/kt_listview_text_fstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kt_listview_text_fCommstate"
+            android:layout_toRightOf="@+id/kt_listview_text_fspeed"
+            android:layout_marginLeft="35dp"
+            android:textSize="14sp"
+            android:textColor="#6699FF"
+            android:text="开关机"
+            />
+        
+    </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/kt_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_ktlist_thead"
+        android:layout_marginBottom="51dp"
+        android:choiceMode="multipleChoice" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linear_opr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.9"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_ktlist_onekey_poweron"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="一键开机" />
+
+        <Button
+            android:id="@+id/btn_ktlist_onekey_poweroff"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="一键关机" />
+    </LinearLayout>
+
+</RelativeLayout>

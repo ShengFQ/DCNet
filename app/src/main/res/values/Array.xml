@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrcontent">
+        <item>编辑</item>
+         <item>删除</item>
+    </string-array>
+     <string-array name="arrsecurityQue">  
+        <item>我的手机品牌是什么</item>  
+        <item>我家空调品牌是什么</item>  
+        <item>我家路由器品牌是什么</item>  
+        <item>我家宠物狗叫什么</item>
+    </string-array>  
+</resources>

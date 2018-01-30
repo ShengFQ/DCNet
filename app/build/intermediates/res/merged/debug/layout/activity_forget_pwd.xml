@@ -1,0 +1,80 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.bandary.dcnet.ui.ForgetPwdActivity" >
+
+    <!-- forget pwd form -->
+
+    <LinearLayout
+        style="@style/LoginFormContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/txt_forgetpwd_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_phone_num"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/txt_register_password"
+            android:nextFocusRight="@+id/txt_register_password"
+            android:singleLine="true"
+            android:textSize="20sp" >
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_security_question"
+            android:textSize="18sp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/txt_register_securityQue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@+id/txt_register_securityAns"
+            android:nextFocusRight="@+id/txt_register_securityAns"
+            android:textSize="20sp" >
+        </Spinner>
+
+        <EditText
+            android:id="@+id/txt_register_securityAns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_security_answer"
+            android:nextFocusDown="@+id/btn_register_submit"
+            android:nextFocusRight="@+id/btn_register_submit"
+            android:singleLine="true"
+            android:textSize="20sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_register_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_reset_pwd"
+            android:textSize="20sp" >
+        </Button>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_forward_Login"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/btn_selector_icon_left"
+                android:gravity="center"
+                android:text="@string/action_sign_in_short"
+                android:textSize="12sp" >
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+</merge>

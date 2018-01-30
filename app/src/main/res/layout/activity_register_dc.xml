@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 上部开始 -->
+
+    <RelativeLayout
+        android:id="@+id/relative_register_dc_top"
+        android:layout_width="fill_parent"
+        android:layout_height="42sp"
+        android:background="@drawable/title_bar_bg" >
+
+        <ImageButton
+            android:id="@+id/btn_regkt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_selector_back" />
+
+        <TextView
+            android:id="@+id/lab_regkt_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/prompt_air_condition"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- 上部结尾 -->
+    <!-- 中间区开始 -->
+    <!-- 中间区- 操作区开始 -->
+
+    <LinearLayout
+        android:id="@+id/lly_reg_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_register_dc_top"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+ 		<ImageView
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/prompt_air_condition"
+            android:src="@drawable/ic_nav_kt" />
+        
+        <EditText
+            android:id="@+id/txt_regkt_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:textSize="20sp"
+            android:hint="请输入名称"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/txt_regkt_fmac"
+            android:nextFocusRight="@+id/txt_regkt_fmac" />
+
+        <EditText
+            android:id="@+id/txt_regkt_fmac"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:textSize="20sp"
+            android:hint="请输入12位设备地址"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/txt_regkt_fregno"
+            android:nextFocusRight="@+id/txt_regkt_fregno"  />
+
+        <EditText
+            android:id="@+id/txt_regkt_fregno"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:textSize="20sp"
+             android:singleLine="true"
+            android:hint="请输入4位注册码"/>
+       
+    </LinearLayout>
+    <!-- 中间区- 操作区结束 -->
+    <!-- 中间区结尾 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lly_reg_middle"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/btn_regkt_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="添加"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</RelativeLayout>

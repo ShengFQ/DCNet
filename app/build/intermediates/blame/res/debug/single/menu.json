@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/wifi_point_cfg.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/wifi_point_cfg.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/about_us.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/about_us.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/register.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/register.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/ktlist.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/ktlist.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/sign_in.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/sign_in.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/detail_kt.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/detail_kt.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/splash.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/splash.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/wifi_scan_list.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/wifi_scan_list.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/type_manager.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/type_manager.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/register_dc.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/register_dc.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/login.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/login.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/edit_dc.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/edit_dc.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/reset_pwd.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/reset_pwd.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/menu/index_main.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/menu/index_main.xml"
+    }
+]

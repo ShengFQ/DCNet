@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        >
+        <TextView 
+            android:id="@+id/kt_listview_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"      
+            android:textColor="#6699FF"      
+            android:text="名称"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:maxLines="2"
+            />
+        
+        <!-- <ImageView
+            android:id="@+id/kt_listview_image_fState"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/kt_listview_text_fspeed"            
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:tag="开关机" /> -->
+            
+        
+        <TextView 
+            android:id="@+id/kt_listview_text_fCommstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/kt_listview_text_name"
+            android:layout_alignParentBottom="true"
+            android:textSize="14sp"
+            android:textColor="#777"
+            android:layout_marginTop="5dp"
+            android:text="在线/离线"
+            />
+         <TextView 
+            android:id="@+id/kt_listview_text_froomtemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kt_listview_text_fCommstate"
+            android:layout_toRightOf="@+id/kt_listview_text_fCommstate"            
+            android:layout_marginLeft="35dp"
+            android:textSize="14sp"
+            android:textColor="#777"
+            android:text="室温"
+            />
+        <TextView 
+            android:id="@+id/kt_listview_text_fModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kt_listview_text_fCommstate"
+            android:layout_toRightOf="@+id/kt_listview_text_froomtemp"
+            android:layout_marginLeft="35dp"
+            android:textSize="14sp"
+            android:textColor="#777"
+            android:text="模式"
+            />
+        <TextView 
+            android:id="@+id/kt_listview_text_fspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kt_listview_text_fCommstate"
+            android:layout_toRightOf="@+id/kt_listview_text_fModel"
+            android:layout_marginLeft="35dp"
+            android:textSize="14sp"
+            android:textColor="#777"
+            android:text="风速"
+            />
+          <TextView 
+            android:id="@+id/kt_listview_text_fstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kt_listview_text_fCommstate"
+            android:layout_toRightOf="@+id/kt_listview_text_fspeed"
+            android:layout_marginLeft="35dp"
+            android:textSize="14sp"
+            android:textColor="#777"
+            android:text="开关机"
+            />
+         <TextView 
+            android:id="@+id/kt_listview_text_fmac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kt_listview_text_fCommstate"
+            android:layout_toRightOf="@+id/kt_listview_text_fspeed"
+            android:layout_marginLeft="2dp"
+            android:textSize="14sp"
+            android:textColor="#777"
+            android:text="mac"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

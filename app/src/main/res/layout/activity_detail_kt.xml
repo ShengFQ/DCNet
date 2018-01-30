@@ -1,0 +1,434 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_global_window"
+    tools:context=".DetailKTActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rel_detail_top"
+        android:layout_width="fill_parent"
+        android:layout_height="42sp"
+        android:background="@drawable/title_bar_bg" >
+
+        <Button  android:id="@+id/btn_pannel_up"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:drawableStart="@drawable/btn_selector_previous"
+            android:background="@null"/>        
+		<Button
+            android:id="@+id/btn_detail_kt_refresh"
+            android:layout_width="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"
+            android:drawableStart="@drawable/btn_selector_refresh"
+            android:background="@null" />
+        <TextView
+            android:id="@+id/txt_kt_detail_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的空调"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txt_kt_detail_fname"
+            android:text=" - 详细信息"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+		
+        <Button
+            android:id="@+id/btn_pannel_down"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:drawableEnd="@drawable/btn_selector_next"
+            android:background="@null"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_detail_mid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_detail_top"
+        android:orientation="vertical" >
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <AbsoluteLayout
+                android:id="@+id/abslayout_longwindow_led"
+                android:layout_width="267dp"
+                android:layout_height="87dp"
+                android:layout_x="27dp"
+                android:layout_y="23dp"
+                android:background="@drawable/bg_longwindow_disable" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="14dp"
+                    android:layout_y="16dp"
+                    android:text="通讯状态"
+                    android:textColor="#743c04" />
+
+                <TextView
+                    android:id="@+id/txt_kt_detail_fcommstate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="14dp"
+                    android:layout_y="56dp"
+                    android:text="--"
+                    android:textColor="#663300" android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="110dp"
+                    android:layout_y="16dp"
+                    android:text="运行状态"
+                    android:textColor="#743c04" />
+
+                <TextView
+                    android:id="@+id/txt_kt_detail_fstate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="110dp"
+                    android:layout_y="56dp"
+                    android:text="--"
+                    android:textColor="#663300" android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="196dp"
+                    android:layout_y="16dp"
+                    android:text="故障状态"
+                    android:textColor="#743c04" />
+
+                <TextView
+                    android:id="@+id/txt_kt_detail_ftrouble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="196dp"
+                    android:layout_y="56dp"
+                    android:text="--"
+                    android:textColor="#663300" android:textSize="15dp"/>
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/abslayout_window_roomtemp"
+                android:layout_width="86dp"
+                android:layout_height="85dp"
+                android:layout_x="27dp"
+                android:layout_y="128dp"
+                android:background="@drawable/bg_window_disable" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="室内温度"
+                        android:textColor="#743c04" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="true"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_kt_detail_froomtemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="#663300"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="℃"
+                            android:textColor="#743c04"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/abslayout_window_settemp"
+                android:layout_width="85dp"
+                android:layout_height="84dp"
+                android:layout_x="155dp"
+                android:layout_y="128dp"
+                android:background="@drawable/bg_window_disable" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="设置温度"
+                        android:textColor="#743c04" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="true"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_kt_detail_fsettemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="#663300"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="℃"
+                            android:textColor="#743c04"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/layout_kt_detail_ftempup"
+                android:layout_width="43dp"
+                android:layout_height="37dp"
+                android:layout_x="251dp"
+                android:layout_y="128dp"
+                android:background="@drawable/btn_up_disable" >
+
+                <Button
+                    android:id="@+id/btn_kt_detail_ftempup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector_up"/>
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/layout_kt_detail_ftempdown"
+                android:layout_width="43dp"
+                android:layout_height="37dp"
+                android:layout_x="251dp"
+                android:layout_y="173dp"
+                android:background="@drawable/btn_down_disable" >
+
+                <Button
+                    android:id="@+id/btn_kt_detail_ftempdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector_down"/>
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/layout_kt_detail_fsetcool"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:layout_x="27dp"
+                android:layout_y="261dp"
+                android:background="@drawable/btn_common_disable" >
+
+                <Button
+                    android:id="@+id/btn_kt_detail_fsetcool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector_common"
+                    android:text="制冷"
+                    android:textColor="#743c04"
+                    android:textSize="15dp"/>
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/layout_kt_detail_fsetheat"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:layout_x="95dp"
+                android:layout_y="261dp"
+                android:background="@drawable/btn_common_disable" >
+
+                <Button
+                    android:id="@+id/btn_kt_detail_fsetheat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector_common"
+                    android:text="制热"
+                    android:textColor="#743c04"
+                    android:textSize="15dp" />
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/layout_kt_detail_fsetfan"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:layout_x="163dp"
+                android:layout_y="261dp"
+                android:background="@drawable/btn_common_disable" >
+
+                <Button
+                    android:id="@+id/btn_kt_detail_fsetfan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector_common"
+                    android:text="送风"
+                    android:textColor="#743c04"
+                    android:textSize="15dp" />
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/layout_kt_detail_fsetauto"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:layout_x="230dp"
+                android:layout_y="261dp"
+                android:background="@drawable/btn_common_disable" >
+
+                <Button
+                    android:id="@+id/btn_kt_detail_fsetauto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector_common"
+                    android:text="自动"
+                    android:textColor="#743c04"
+                    android:textSize="15dp" />
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/layout_kt_detail_fsetfanlow"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:layout_x="27dp"
+                android:layout_y="342dp"
+                android:background="@drawable/btn_common_disable" >
+
+                <Button
+                    android:id="@+id/btn_kt_detail_fsetfanlow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector_common"
+                    android:text="低风"
+                    android:textColor="#743c04"
+                    android:textSize="15dp" />
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/layout_kt_detail_fsetfanmid"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:layout_x="95dp"
+                android:layout_y="342dp"
+                android:background="@drawable/btn_common_disable" >
+
+                <Button
+                    android:id="@+id/btn_kt_detail_fsetfanmid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector_common"
+                    android:text="中风"
+                    android:textColor="#743c04"
+                    android:textSize="15dp" />
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/layout_kt_detail_fsetfanhigh"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:layout_x="163dp"
+                android:layout_y="342dp"
+                android:background="@drawable/btn_common_disable" >
+
+                <Button
+                    android:id="@+id/btn_kt_detail_fsetfanhigh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector_common"
+                    android:text="高风"
+                    android:textColor="#743c04"
+                    android:textSize="15dp" />
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:id="@+id/layout_kt_detail_fsetfanauto"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:layout_x="230dp"
+                android:layout_y="342dp"
+                android:background="@drawable/btn_common_disable" >
+
+                <Button
+                    android:id="@+id/btn_kt_detail_fsetfanauto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector_common"
+                    android:text="自动"
+                    android:textColor="#743c04"
+                    android:textSize="15dp" />
+            </AbsoluteLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="27dp"
+                android:layout_y="238dp"
+                android:text="模式选择"
+                android:textColor="#743c04" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="27dp"
+                android:layout_y="320dp"
+                android:text="风速选择"
+                android:textColor="#743c04" />
+        </AbsoluteLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linear_detail_mid"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_kt_detail_power"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_selector_power"
+            android:scaleType="fitXY"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

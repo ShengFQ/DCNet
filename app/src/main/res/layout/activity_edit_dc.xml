@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    tools:context="com.bandary.dcnet.ui.EditDCActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_editdc_top"
+        android:layout_width="fill_parent"
+        android:layout_height="42sp"
+        android:background="@drawable/title_bar_bg" >
+
+        <TextView
+            android:id="@+id/txt_edit_dc_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的空调"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- 上部结尾 -->
+    <!-- 中部编辑区 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_layout_editdc_top"        
+        android:background="@null"
+        android:orientation="vertical" >
+        <ImageView
+            android:id="@+id/img_edit_dc_Pic"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:contentDescription="空调设备"
+            android:src="@drawable/ic_nav_kt" />
+
+      <EditText
+          android:id="@+id/txt_edit_dc_rename"
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:textSize="20sp"
+            android:hint="请输入名称"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/btn_editdc_save"
+            android:nextFocusRight="@+id/btn_editdc_save">
+			
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_editdc_opr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.9"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_editdc_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:textSize="22sp"
+            android:text="保存" />
+    </LinearLayout>
+    <!-- 下部按钮区 -->
+
+</RelativeLayout>

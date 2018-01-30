@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TypeManagerActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_typemgr_top"
+        android:layout_width="fill_parent"
+        android:layout_height="42sp"
+        android:background="@drawable/title_bar_bg" >
+
+        <ImageButton
+            android:id="@+id/btn_typemgr_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_selector_back" />
+
+        <TextView
+            android:id="@+id/lab_typemgr_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设备类别管理"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- 上部结尾 -->
+
+    <ListView
+        android:id="@+id/listview_typeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_opr"
+        android:layout_below="@+id/relative_layout_typemgr_top"
+        android:choiceMode="multipleChoice" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linear_opr"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_typemgr_all"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="全选" />
+
+        <Button
+            android:id="@+id/btn_typemgr_save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:text="保存" />
+    </LinearLayout>
+
+</RelativeLayout>

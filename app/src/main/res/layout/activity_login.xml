@@ -1,0 +1,100 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.bandary.dcnet.ui.LoginActivity" >
+
+    <!-- Login form -->
+
+    <LinearLayout
+        style="@style/LoginFormContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" > 
+        <EditText
+            android:id="@+id/txt_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:textSize="20sp"
+            android:hint="@string/prompt_phone_num"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/txt_login_password"
+            android:nextFocusRight="@+id/txt_login_password">
+        </EditText>
+
+      
+        <EditText
+            android:id="@+id/txt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:textSize="20sp"
+            android:hint="@string/prompt_password"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/chk_login_remenberme"
+            android:nextFocusRight="@+id/chk_login_remenberme">
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/chk_login_remenberme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:text="@string/action_remenber_password"
+             android:nextFocusDown="@+id/btn_login_submit"
+            android:nextFocusRight="@+id/btn_login_submit">
+        </CheckBox>
+
+        <Button
+            android:id="@+id/btn_login_submit"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_sign_in_short"
+            android:textSize="20sp" >
+        </Button>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_login_forward_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:drawableEnd="@drawable/btn_selector_icon_right"
+                android:gravity="center"
+                android:text="@string/action_forgot_password"
+                android:textSize="12sp" >
+            </Button>
+            <Button
+                android:id="@+id/btn_login_forward_Register"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btn_login_forward_forgot_password"
+                android:background="@null"
+                android:drawableEnd="@drawable/btn_selector_icon_right"
+                android:gravity="center"
+                android:text="@string/action_sign_up_short"
+                android:textSize="12sp" >
+            </Button>
+            <Button
+                android:id="@+id/btn_login_forward_relax"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btn_login_forward_Register"
+                android:background="@null"
+                android:drawableEnd="@drawable/btn_selector_icon_right"
+                android:gravity="center"
+                android:text="@string/action_activate_device"
+                android:textSize="12sp" >
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+</merge>

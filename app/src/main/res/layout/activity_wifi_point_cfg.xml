@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bandary.dcnet.ui.WifiPointCfgActivity" >
+
+    <LinearLayout
+        style="@style/LoginFormContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/wifi_cfg_txt_one"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/wifi_cfg_txt_two"
+            android:textSize="15sp" />
+       
+		  <EditText
+            android:id="@+id/txt_wifi_point_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_wifi_ssid"
+            android:inputType="text"
+            android:nextFocusDown="@+id/txt_wifi_point_ssidpwd"
+            android:nextFocusRight="@+id/txt_wifi_point_ssidpwd"
+            android:singleLine="true"
+            android:textSize="20sp" >
+        </EditText> 
+       
+		 <!-- <Spinner
+            android:id="@+id/txt_wifi_point_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@+id/txt_wifi_point_ssidpwd"
+            android:nextFocusRight="@+id/txt_wifi_point_ssidpwd" 
+            android:hint="@string/prompt_wifi_ssid"            
+            android:textSize="20sp" >
+        </Spinner> -->
+        
+        <EditText
+            android:id="@+id/txt_wifi_point_ssidpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/chk_wifi_point_remenberme"
+            android:nextFocusRight="@+id/chk_wifi_point_remenberme"
+            android:singleLine="true"
+            android:textSize="20sp" >
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/chk_wifi_point_remenberme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:nextFocusDown="@+id/btn_wifi_cfg_next"
+            android:nextFocusRight="@+id/btn_wifi_cfg_next"
+            android:text="@string/action_remenber_password" >
+        </CheckBox>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_wifi_cfg_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/action_button_next"
+        android:textSize="20sp" >
+    </Button>
+
+</RelativeLayout>

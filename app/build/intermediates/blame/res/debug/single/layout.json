@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_reset_pwd.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_reset_pwd.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_welcome_disc.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_welcome_disc.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/listview_type_item.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/listview_type_item.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_about_us.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_about_us.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/loading.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/loading.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_common.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_common.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_wifi_point_cfg.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_wifi_point_cfg.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_ktlist.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_ktlist.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_wifi_point_commu.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_wifi_point_commu.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_edit_dc.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_edit_dc.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_wifi_point_result.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_wifi_point_result.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_register.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_register.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_forget_pwd.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_forget_pwd.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/fragment_welcome_disc.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/fragment_welcome_disc.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/listview_kt_item.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/listview_kt_item.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_register_dc.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_register_dc.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/foot.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/foot.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_wifi_scan_list.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_wifi_scan_list.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_login.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/listview_wifi_item.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/listview_wifi_item.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_index_main.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_index_main.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_detail_kt.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_detail_kt.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_upgrade.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_upgrade.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/gridview_nav_item.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/gridview_nav_item.xml"
+    },
+    {
+        "merged": "/Users/sheng/workspace/androidstudio/DCNet/app/build/intermediates/res/merged/debug/layout/activity_type_manager.xml",
+        "source": "/Users/sheng/workspace/androidstudio/DCNet/app/src/main/res/layout/activity_type_manager.xml"
+    }
+]

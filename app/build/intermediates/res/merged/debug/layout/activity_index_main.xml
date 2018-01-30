@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ <RelativeLayout
+        android:id="@+id/relative_layout_index_top"
+        android:layout_width="fill_parent"
+        android:layout_height="42sp"
+        android:background="@drawable/title_bar_bg" >    
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设备控制导航"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />  
+    </RelativeLayout>
+    <!-- 停靠在中间 -->
+    <GridView
+        android:id="@+id/index_main_componet_grid_view"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relative_layout_index_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+    <!-- 停靠在底部 -->
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_index_sysinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="系统信息" />
+
+        <Button
+            android:id="@+id/btn_index_addtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:text="设备类别添加" />
+    </RelativeLayout>
+
+</RelativeLayout>

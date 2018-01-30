@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bandary.dcnet.ui.AboutUsActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_about_top"
+        android:layout_width="fill_parent"
+        android:layout_height="42sp"
+        android:background="@drawable/title_bar_bg" >
+
+       
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="系统信息"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- 上部结尾 -->
+
+  <LinearLayout
+        android:id="@+id/linear_about_b"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout_about_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+        
+        <Button
+            android:id="@+id/btn_about_checkUpgrade"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"            
+            android:text="检查更新"
+            />
+     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备汇总:"
+            
+            android:textSize="20dp" />
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="支持8大系列家居控制"
+            
+            android:textSize="17dp" />  
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新产品发布:"
+            
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="http://www.bandarytech.com/"
+            
+            android:textSize="17dp" />
+  
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示密码:"
+            
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="123456"
+            
+            android:textSize="17dp" />
+   
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于我们:"
+            
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="舒适更低碳"
+            
+            android:textSize="17dp" />
+    
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件版本:"
+            
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="v1.3"
+            
+            android:textSize="17dp" />
+    </LinearLayout>
+     <Button
+            android:id="@+id/btn_about_back"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentBottom="true"
+            android:text="返回"
+            />
+
+</RelativeLayout>
